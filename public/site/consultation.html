@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book a Consultation — WESTadvocates</title>
+  <meta name="description" content="Request a confidential consultation with a senior member of the WESTadvocates legal team." />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div id="preloader"><div class="preloader-mark">WEST<span style="color:#fff">advocates</span></div></div>
+
+<nav class="navbar solid">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">WEST<span class="accent">advocates</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="practice-areas.html">Practice Areas</a></li>
+      <li><a href="attorneys.html">Attorneys</a></li>
+      <li><a href="case-results.html">Case Results</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li class="nav-cta"><a href="consultation.html" class="btn btn-primary">Book Consultation</a></li>
+    </ul>
+    <button class="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<header class="page-header">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> <span class="accent">/</span> Consultation</div>
+    <h1 data-aos="fade-up">Schedule Your Consultation</h1>
+    <p data-aos="fade-up" data-aos-delay="100">Tell us briefly about your matter. Every consultation is strictly confidential and conducted by a senior member of our team.</p>
+  </div>
+</header>
+
+<section class="section section-grey">
+  <div class="container">
+    <div class="form-wrap" data-aos="fade-up">
+      <form data-validate id="consultationForm" novalidate>
+        <div class="form-grid">
+          <div class="form-group">
+            <label>Full Name <span class="req">*</span></label>
+            <input type="text" name="name" data-required placeholder="Jane Doe">
+            <div class="error-msg">Please enter your full name.</div>
+          </div>
+          <div class="form-group">
+            <label>Email Address <span class="req">*</span></label>
+            <input type="email" name="email" data-required placeholder="jane@example.com">
+            <div class="error-msg">Please enter a valid email address.</div>
+          </div>
+          <div class="form-group">
+            <label>Phone Number <span class="req">*</span></label>
+            <input type="tel" name="phone" data-required placeholder="+254 700 000 000">
+            <div class="error-msg">Please enter a valid phone number.</div>
+          </div>
+          <div class="form-group">
+            <label>Legal Matter Type <span class="req">*</span></label>
+            <select name="matter" data-required>
+              <option value="">Select a practice area…</option>
+              <option>Corporate & Commercial</option>
+              <option>Civil Litigation</option>
+              <option>Criminal Defense</option>
+              <option>Real Estate & Property</option>
+              <option>Family & Divorce</option>
+              <option>Employment & Labor</option>
+              <option>Intellectual Property</option>
+              <option>Tax & Compliance</option>
+              <option>Other / Not Sure</option>
+            </select>
+            <div class="error-msg">Please choose a matter type.</div>
+          </div>
+          <div class="form-group">
+            <label>Preferred Date <span class="req">*</span></label>
+            <input type="date" name="date" data-required>
+            <div class="error-msg">Please select a date.</div>
+          </div>
+          <div class="form-group">
+            <label>Preferred Time <span class="req">*</span></label>
+            <input type="time" name="time" data-required>
+            <div class="error-msg">Please select a time.</div>
+          </div>
+          <div class="form-group full">
+            <label>Message / Case Summary <span class="req">*</span></label>
+            <textarea name="message" data-required placeholder="Briefly describe your matter. Information shared here is held in confidence."></textarea>
+            <div class="error-msg">Please provide a brief summary.</div>
+          </div>
+        </div>
+        <div class="form-submit">
+          <button type="submit" class="btn btn-dark">Request Consultation <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Success Modal -->
+<div class="success-modal" id="successModal" role="dialog" aria-modal="true">
+  <div class="success-box">
+    <div class="success-icon"><i class="fa-solid fa-check"></i></div>
+    <h3>Request Received</h3>
+    <p>Thank you. A member of our team will contact you within one business day to confirm your consultation.</p>
+    <button class="btn btn-dark" data-close-success>Close</button>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">WEST<span class="accent">advocates</span></div>
+        <p>Premier corporate and litigation counsel.</p>
+        <div class="footer-socials"><a href="#"><i class="fa-brands fa-linkedin-in"></i></a><a href="#"><i class="fa-brands fa-x-twitter"></i></a><a href="#"><i class="fa-brands fa-facebook-f"></i></a></div>
+      </div>
+      <div><h4>Navigate</h4><ul><li><a href="index.html">Home</a></li><li><a href="practice-areas.html">Practice Areas</a></li><li><a href="attorneys.html">Attorneys</a></li><li><a href="case-results.html">Case Results</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h4>Practice</h4><ul><li><a href="practice-areas.html">Corporate</a></li><li><a href="practice-areas.html">Litigation</a></li><li><a href="practice-areas.html">Real Estate</a></li></ul></div>
+      <div><h4>Contact</h4><ul><li><i class="fa-solid fa-location-dot" style="color:#C8A96B"></i> Riverside Drive, Nairobi</li><li><i class="fa-solid fa-phone" style="color:#C8A96B"></i> +254 700 000 000</li><li><i class="fa-solid fa-envelope" style="color:#C8A96B"></i> counsel@westadvocates.law</li></ul></div>
+    </div>
+    <div class="footer-bottom">© <span id="year"></span> WESTadvocates. All rights reserved.</div>
+  </div>
+</footer>
+
+<a class="whatsapp-float" href="https://wa.me/254700000000" target="_blank"><i class="fa-brands fa-whatsapp"></i><span class="tip">Speak to our legal team</span></a>
+<button class="scroll-top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
